@@ -1,0 +1,60 @@
+┌────────────────────────────────────────────────────────┐
+│           ENTRADAS E EQUIPAMENTOS GOODWE               │
+├────────────────────────────────────────────────────────┤
+│ • Horários: 06h às 22h                                 │
+│ • Consumo do eletroposto e Geração solar               │
+│ • Nível inicial e Capacidade da bateria GoodWe         │
+│ • Dicionário GoodWe (Inversor ET, Bateria Lynx, SEMS)  │
+│ • Tupla de Tarifas (Fora de ponta e Horário de pico)   │
+└───────────────────────────┬────────────────────────────┘
+                            │
+                            ▼
+┌────────────────────────────────────────────────────────┐
+│       VALIDAÇÃO E SERVIDOR LOCAL PYTHON                │
+├────────────────────────────────────────────────────────┤
+│ • HTTPServer / BaseHTTPRequestHandler (localhost:8000) │
+│ • Tratamento de Erros (try / except ValueError)        │
+└───────────────────────────┬────────────────────────────┘
+                            │
+                            ▼
+┌────────────────────────────────────────────────────────┐
+│       GESTÃO INTELIGENTE DE ENERGIA (ECOCHARGE)        │
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│  1. Verifica a demanda do horário                      │
+│                 │                                      │
+│                 ▼                                      │
+│  2. Horário de pico (18h às 21h)                       │
+│                 │                                      │
+│                 ▼                                      │
+│     Redução de demanda em 20%                          │
+│                                                        │
+│  3. Prioridade energética:                             │
+│                                                        │
+│       SOLAR (Inversor GoodWe ET)                       │
+│         ↓                                              │
+│       BATERIA (GoodWe Lynx Home F)                     │
+│         ↓                                              │
+│       REDE ELÉTRICA                                    │
+│                                                        │
+│  4. Excedente solar → Armazenado na Bateria GoodWe     │
+└───────────────────────────┬────────────────────────────┘
+                            │
+                            ▼
+┌────────────────────────────────────────────────────────┐
+│     PROCESSAMENTO, SUSTENTABILIDADE E ARQUIVOS         │
+├────────────────────────────────────────────────────────┤
+│ • Pandas DataFrame (Tabela horária detalhada)          │
+│ • Cálculo de CO2 evitado (kg) e Economia (R$)          │
+│ • Gravação de Arquivo Local (relatorio_goodwe_sems.txt)│
+└───────────────────────────┬────────────────────────────┘
+                            │
+                            ▼
+┌────────────────────────────────────────────────────────┐
+│          VISUALIZAÇÃO E INTERFACE WEB                  │
+├────────────────────────────────────────────────────────┤
+│ • Matplotlib (Gráfico em base64)                       │
+│ • Ficha Técnica de Integração GoodWe                   │
+│ • Indicadores Energéticos, Ambientais e Financeiros    │
+│ • Tabela de Operação e Ações por Horário               │
+└────────────────────────────────────────────────────────┘
