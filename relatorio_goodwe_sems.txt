@@ -1,0 +1,19 @@
+RELATÓRIO DE MONITORAMENTO - ECOCHARGE GOODWE
+
+Inversor Utilizado: GoodWe ET Series (Híbrido)
+Sistema de Bateria: GoodWe Lynx Home F
+Carregador Veicular: GoodWe HCA Series (EV Charger)
+Plataforma: GoodWe SEMS Portal
+
+PARÂMETROS DA SIMULAÇÃO
+Nível Inicial da Bateria: 50.0 kWh
+Capacidade Total da Bateria: 100.0 kWh
+
+RESULTADOS QUANTITATIVOS E SUSTENTABILIDADE
+Energia Solar Utilizada: 605 kWh
+Energia da Bateria Utilizada: 150.0 kWh
+Energia da Rede Elétrica: 313.0 kWh
+Demanda Reduzida no Pico (18h-21h): 82.0 kWh
+Índice de Energia Renovável: 70.7%
+Emissão de CO2 Evitada: 71.15 kg
+Economia Financeira Estimada: R$ 671.65
