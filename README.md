@@ -121,4 +121,4 @@ Considerando o cenário padrão de simulação (**Nível Inicial da Bateria: 50 
 
 ## Vídeo Técnico de Apresentação
 
-- **Link do vídeo:**
+- **Link do vídeo:**https://youtu.be/Xyrr7oh2sd0
